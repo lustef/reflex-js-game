@@ -35,7 +35,7 @@
 
 @media (min-width: 576px) {
   .game-container {
-    width: 80%;
+    width: 50%;
   }
   .lifes-container,
   .time-container,
@@ -60,7 +60,7 @@
 
 @media (min-width: 992px) {
   .boxes-container {
-    width: 75%;
+    width: 50%;
   }
 }
 
