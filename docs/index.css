@@ -1,5 +1,5 @@
 .game-container {
-  width: 80%;
+  width: 95%;
 }
 
 .btn {
@@ -9,16 +9,39 @@
 }
 
 .boxes-container {
-  width: 80%;
+  width: 90%;
+}
+
+.box-container {
+  padding: 0.12rem;
 }
 
 .box {
   width: 100%;
   padding-top: 100%;
+  border-radius: 5%;
   cursor: pointer;
 }
 
+@media (min-width: 380px) {
+  .boxes-container {
+    width: 80%;
+  }
+
+  .box-container {
+    padding: 0.25rem;
+  }
+}
+
 @media (min-width: 576px) {
+  .game-container {
+    width: 80%;
+  }
+  .lifes-container,
+  .time-container,
+  .points-container {
+    font-size: 1.5rem;
+  }
   .btn {
     font-size: 1.25rem;
   }
@@ -37,7 +60,7 @@
 
 @media (min-width: 992px) {
   .boxes-container {
-    width: 40%;
+    width: 75%;
   }
 }
 

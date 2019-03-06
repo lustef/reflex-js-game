@@ -2,7 +2,7 @@ export const infoSpan = ' badge badge-info m-1 p-2 p-md-3'
 
 //box
 export const boxesContainerClass = ' m-auto row justify-content-center p-1 p-md-2';
-export const boxContainerClass = ' col-3 p-2';
+export const boxContainerClass = ' p-sm-2';
 
 export const disabledClass = 'bg-secondary';
 export const enabledClass = 'bg-warning';

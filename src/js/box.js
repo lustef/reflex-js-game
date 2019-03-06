@@ -11,18 +11,21 @@ export class Box {
     this._box = null;
   }
 
+  //set box into active view
   setActive() {
     this._active = true;
     this._box.classList.toggle(enabledClass);
     this._box.classList.toggle(activeClass);
   }
-
+  
+  //set box into standard view
   setInactive() {
     this._active = false;
     this._box.classList.toggle(activeClass);
     this._box.classList.toggle(enabledClass);
   }
 
+  //set box into disable view
   setDisabled() {
     this._active = false;
     this._box.classList.remove(enabledClass);
@@ -30,13 +33,18 @@ export class Box {
 
   }
 
+  //set box into ensble view
   setEnabled() {
     this._active = false;
     this._box.classList.remove(disabledClass);
     this._box.classList.add(enabledClass);
-
   }
 
+  setCSSWidth(_width) {
+    this._boxContainer.style = `width: ${_width}%`
+  }
+
+  //build DOM elements of this class
   init() {
     this._boxContainer = document.createElement('div');
     this._box = document.createElement('div');
