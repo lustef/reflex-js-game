@@ -1,0 +1,44 @@
+.game-container {
+  width: 80%;
+}
+
+.btn {
+  font-size: 75%;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.boxes-container {
+  width: 80%;
+}
+
+.box {
+  width: 100%;
+  padding-top: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .btn {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .lifes-container,
+  .time-container,
+  .points-container {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .boxes-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {}
