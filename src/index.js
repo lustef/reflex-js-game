@@ -15,7 +15,7 @@ const gameInfo_points = document.querySelector('.game-info__points');
 //create classes
 const Lifes = new LifeCounter(gameInfo);
 //setting number of lifes
-Lifes.setLifes(5);
+Lifes.setLifes(3);
 
 const Points = new PointsCounter(gameInfo_points);
 

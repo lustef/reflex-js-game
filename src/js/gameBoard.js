@@ -125,7 +125,6 @@ export class GameBoard {
     this._boxesEvent = () => { };
   }
 
-
   //function which set function which will be add to eventListener of boxes
   addEventsForBoxes() {
     this._boxesEvent = this.boxHandler;
@@ -146,6 +145,7 @@ export class GameBoard {
       this._mediator.decreaseLife();
     }, 2000);
   }
+
   //random and activate one of boxes
   setRandomActive() {
     const random = getRandomInt(0, this._numerofBoxes - 1);
@@ -155,6 +155,7 @@ export class GameBoard {
       this.awaitForClick();
     }, 3000);
   }
+  
   //reset board game
   clearBoard() {
     clearTimeout(this._timeoutFunction);
