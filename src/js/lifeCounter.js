@@ -43,7 +43,7 @@ export class LifeCounter {
 
   //update display text
   bindLifesToSpan() {
-    this._timerSpan.innerText = `Życia: ${this._lifes}`;
+    this._timerSpan.innerText = `Zostało żyć: ${this._lifes}`;
   }
 
   //build DOM elements of this class

@@ -8,6 +8,13 @@
   padding: 1rem;
 }
 
+.rules-button {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  padding: 0.5rem;
+}
+
 .boxes-container {
   width: 90%;
 }
@@ -27,7 +34,6 @@
   .boxes-container {
     width: 80%;
   }
-
   .box-container {
     padding: 0.25rem;
   }
@@ -45,7 +51,6 @@
   .btn {
     font-size: 1.25rem;
   }
-
   .boxes-container {
     width: 50%;
   }
@@ -62,8 +67,6 @@
   }
 }
 
-@media (min-width: 992px) {
-  
-}
+@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}

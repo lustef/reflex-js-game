@@ -15,6 +15,41 @@
     <div class="game-info row justify-content-around p-4"></div>
     <div class="game-info__points row justify-content-center p-1"></div>
   </main>
+
+
+  <!-- Button trigger modal -->
+  <button type="button" class="rules-button btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <span>&#9888;</span>
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Zasady gry</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="rules">
+            <span>1. Rozpocznij grę wciskając "START"</span><br>
+            <span>2. Rozgrywka trwa 60 sekund lub do straty ostatniego życia.</span><br>
+            <span>3. Co 3 sekundy losowo wybrany kwadrat zapala się na zielono</span><br>
+            <span>4. Kwadrat jest zapalony na zielono przez 2 sekundy.</span><br>
+            <span>5. Jeśli graczowi uda się kliknąć zielony kwadrat, dostajesz 1 punkt</span><br>
+            <span>6. Gracz traci życie, jeśli w trafi w inny kwadrat lub jeśli podświetlenie zielonego kwadratu zniknie po 2 sekundach.</span><br>
+            <span>7. Grę można zresetować wciskając przycisk "RESET"</span><br>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
